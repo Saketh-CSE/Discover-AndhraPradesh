@@ -1,5 +1,5 @@
 const locations = [
-    // Districts
+    // Districts (existing entries remain unchanged)
     {
         name: "Anantapur",
         type: "district",
@@ -25,7 +25,7 @@ const locations = [
         imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRJlC6djquAhD2v6P5YyT-We7oKtLbfnsbQ&s",
     },
     {
-        name: "Krishna",
+        name: "Krishna district",
         type: "district",
         description: "Cultural hub with Vijayawada as its headquarters",
         imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkz4N3jT37zMCWX5-h64mytFhV7F2zjQnVw&s",
@@ -37,10 +37,10 @@ const locations = [
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/93/Kurnool_fort%2CAP_-_panoramio.jpg",
     },
     {
-        name: "Prakasam",
+        name: "Prakasam district",
         type: "district",
         description: "Known for its extensive coastline",
-        imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/b5/db/4f/prakasam-barrage.jpg?w=1200&h=-1&s=1",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00KyiRwgecmQTUYLX6hq9K1yL2MdRf_Qmqw&s",
     },
     {
         name: "Nellore",
@@ -79,7 +79,7 @@ const locations = [
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/62/200_years_memorable_pylon.jpg",
     },
 
-    // Famous Places
+    // Famous Places (existing entries)
     {
         name: "Tirumala Temple",
         type: "religious",
@@ -240,5 +240,381 @@ const locations = [
         district: "Chittoor",
         description: "Famous temple for Rahu-Ketu prayers",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/98/Sri_Kala_Hasti.jpg",
+    },
+
+    // Additional Places
+    {
+        name: "Annavaram Temple",
+        type: "religious",
+        district: "East Godavari",
+        description: "Temple dedicated to Lord Satyanarayana Swamy on Ratnagiri Hill",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/A_Hindu_temple_at_Annavaram_Andhra_Pradesh.jpg/640px-A_Hindu_temple_at_Annavaram_Andhra_Pradesh.jpg",
+    },
+    {
+        name: "Nagarjunakonda",
+        type: "historical",
+        district: "Guntur",
+        description: "Ancient Buddhist settlement now an island museum",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5OCb15dwp4YCRHlKQf-CzacWdpBQ9e6sGGg&s",
+    },
+    {
+        name: "Lambasingi",
+        type: "natural",
+        district: "Visakhapatnam",
+        description: "Known as the 'Kashmir of Andhra Pradesh' for its cool climate",
+        imageUrl: "https://indianetzone.wordpress.com/wp-content/uploads/2019/08/l6.jpg?w=940",
+    },
+    {
+        name: "Yaganti Temple",
+        type: "religious",
+        district: "Kurnool",
+        description: "Ancient cave temple with unique growing Nandi statue",
+        imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/22/74/5a/download-5-largejpg.jpg?w=600&h=400&s=1",
+    },
+    {
+        name: "Maredumilli",
+        type: "natural",
+        district: "East Godavari",
+        description: "Eco-tourism destination with dense forests and waterfalls",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqW_wyfD1scTz8VqS416BsPOOALeMW93vY1g&s",
+    },
+    {
+        name: "Chandragiri Fort",
+        type: "historical",
+        district: "Chittoor",
+        description: "Medieval fort with beautiful palace architecture",
+        imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/chandragiri-fort-tirupati-andhra-pradesh-1-new-attr-hero?qlt=82&ts=1726743424057",
+    },
+    {
+        name: "Suryalanka Beach",
+        type: "natural",
+        district: "Guntur",
+        description: "Pristine beach known for its golden sands",
+        imageUrl: "https://assets.thehansindia.com/h-upload/2020/01/24/256851-suryalanka-beach.webp",
+    },
+    {
+        name: "Kanaka Durga Temple",
+        type: "religious",
+        district: "Krishna",
+        description: "Famous temple dedicated to Goddess Durga on Indrakeeladri hill",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMUkEEiXRzp20pehPb9BkgHJl1QBqnyV4sNQ&s",
     }
 ];
+
+const famousPlaces = {
+    "Anantapur": [
+        {
+            name: "Lepakshi Temple",
+            description: "Ancient temple known for its exquisite murals and architecture",
+            imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Front_side_of_Veerabhadra_Temple%2C_Lepakshi.jpg"
+        },
+        {
+            name: "Penna Dam",
+            description: "Major irrigation project with scenic views",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxRvIVhI_wK1DqexEyKUbYi5iP9qHQI3rQhw&s"
+        }
+    ],
+    "Chittoor": [
+        {
+            name: "Tirumala Temple",
+            description: "One of the most visited religious sites in the world",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrkmVYZ9Echgiu4HQn0QStzZ7q9ZLjF0Q1-A&s"
+        },
+        {
+            name: "Horsley Hills",
+            description: "Beautiful hill station with panoramic views",
+            imageUrl: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIuL0mhkibUM45BkO2wYHpoHGB1wvsBP0lEXN85s2xVjttLnXGnJzKWrp-odnllVfQW1bVVA0Sk0x93hyphenhyphenO4a3GT_3O3Ekv8dzsmgACQimG1eZorp85fxOZA58a5TBdh1lIa3X07Ix5r0Xc/"
+        }
+    ],
+    "East Godavari": [
+        {
+            name: "Konaseema",
+            description: "Beautiful delta region with scenic backwaters",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4M4_4u6wT5lSYHQ4LMuyY4UOa_C3pw6ZQQ&s"
+        },
+        {
+            name: "Coringa Wildlife Sanctuary",
+            description: "Second largest mangrove forest in India",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9slIXvJ-ayJ1l-uqHzVUIMLcEmXO40pOEYQ&s"
+        }
+    ],
+    "Guntur": [
+        {
+            name: "Undavalli Caves",
+            description: "Ancient rock-cut caves with beautiful architecture",
+            imageUrl: "https://www.trawell.in/admin/images/upload/249844204UndavalliCaves_Main.jpg"
+        },
+        {
+            name: "Amaravati Stupa",
+            description: "Historic Buddhist site with rich heritage",
+            imageUrl: "https://travel-blog.happyeasygo.com/wp-content/uploads/2020/04/Amaravati-Stupa.jpg"
+        }
+    ],
+    "Krishna": [
+        {
+            name: "Bhavani Island",
+            description: "Scenic river island with recreational activities",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSydAWE_9fzZrP2QQX6jkKYKF6R-XRDHZv2wg&s"
+        },
+        {
+            name: "Kondapalli Fort",
+            description: "Historic fort known for traditional toy making",
+            imageUrl: "https://i0.wp.com/rashminotes.com/wp-content/uploads/2019/09/k3.png?fit=1503%2C929&ssl=1"
+        }
+    ],
+    "Kurnool": [
+        {
+            name: "Belum Caves",
+            description: "Second longest cave system in Indian subcontinent",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ89c_XhcIj8NAoHuTtrKEl24rfbEi3ZBTgWg&s"
+        },
+        {
+            name: "Srisailam Temple",
+            description: "Ancient temple dedicated to Lord Shiva",
+            imageUrl: "https://media.assettype.com/outlooktraveller%2F2024-07%2Fde3b5fc9-0fbf-41f2-ad04-d11a18b85b24%2Fshutterstock_1009388953.jpg"
+        }
+    ],
+    "Prakasam": [
+        {
+            name: "Chirala Beach",
+            description: "Beautiful beach with pristine waters",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3ANgCmQGhtsCj1hZ7WnjBPEXO-xm405uVg&s"
+        },
+        {
+            name: "Chandravanka Temple",
+            description: "Historic temple with unique architecture",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLV8wnOAFeiI4r1983V3XViS1_po4_Li5-wA&s"
+        }
+    ],
+    "Nellore": [
+        {
+            name: "Pulicat Lake",
+            description: "Second largest brackish water lagoon in India",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfndgrmVeaRkjOTcaOXswom4bE3xtbChBbA&s"
+        },
+        {
+            name: "Penchalakona Temple",
+            description: "Ancient temple surrounded by seven hills",
+            imageUrl: "https://historicalplacesandtemples.wordpress.com/wp-content/uploads/2016/10/penchalakoma.jpg?w=1200"
+        }
+    ],
+    "Srikakulam": [
+        {
+            name: "Arasavalli Sun Temple",
+            description: "Ancient temple dedicated to Sun God",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2CNKCN0nYL6wEu_IUN6X3Y79ysq1qMMl0A&s"
+        },
+        {
+            name: "Kalingapatnam Beach",
+            description: "Historic port town with beautiful beach",
+            imageUrl: "https://www.realjourneytravels.com/wp-content/uploads/Port-Kalingapatnam-beach-Kalingapatnam.jpg"
+        }
+    ],
+    "Visakhapatnam": [
+        {
+            name: "RK Beach",
+            description: "Popular beach with submarine museum",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTnqNGtd7-okROi9-yF93jGdR9eOcb8CQzA&s"
+        },
+        {
+            name: "Araku Valley",
+            description: "Beautiful hill station with coffee plantations",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFOzufe1VM5g5HYtfho70gFDXVBnG1r2Few&s"
+        }
+    ],
+    "Vizianagaram": [
+        {
+            name: "Vizianagaram Fort",
+            description: "Historic fort with rich heritage",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnJc_7k-FpwPdc_J8iOv2wzzhDovYeMA4PwYPsEMe-F3vXhoTIB1UOmw2VN5A8J3kmRA&usqp=CAU"
+        },
+        {
+            name: "Ramatheertham Temple",
+            description: "Ancient temple on hilltop",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRishjSCLT3gR8Yg0rA6VS8GEdBdyGG584FJQ&s"
+        }
+    ],
+    "West Godavari": [
+        {
+            name: "Kolleru Lake",
+            description: "Largest freshwater lake in India",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV-s9fIzjl0cmZTVLHffUWcpjcuY55XgWHw&s"
+        },
+        {
+            name: "Dwaraka Tirumala",
+            description: "Famous temple known as Chinna Tirumala",
+            imageUrl: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitj6Gz-2V-C83L_BROBrPQviDLSgLVIWFsnakZ1tzMwp6oTSHwpH7Zr7MMEPRRiqPQOYlZN1R7qp1avGgphPo9T-VmRmuy6_TJW6Au9Gg6Q8HIZK52k-U-3GpLsqgrNFEsIkv1hM0cmGFX/s640/Temple-dwarka-tirumala.jpg"
+        }
+    ],
+    "YSR Kadapa": [
+        {
+            name: "Gandikota",
+            description: "Grand Canyon of India",
+            imageUrl: "https://masalabox.co.in/wp-content/uploads/2019/09/rsz_gandikota_rocks.jpg"
+        },
+        {
+            name: "Vontimitta Temple",
+            description: "Historic temple with beautiful architecture",
+            imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/19/Sri_Kodanda_Rama_Swamy_Temple%2C_Vontimitta%2C_Kadapa.jpg"
+        }
+    ]
+};
+
+const famousFoods = {
+    "Anantapur": [
+        {
+            name: "Rayalaseema Ragi Sangati",
+            description: "Traditional millet ball dish served with spicy curry",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojHuU5094UZzd_rOrv17df1a-DQmp1jx36A&s"
+        },
+        {
+            name: "Groundnut Chutney",
+            description: "Spicy peanut chutney, a local specialty",
+            imageUrl: "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/peanut-chutney-ground-nut-chutney.jpg"
+        }
+    ],
+    "Chittoor": [
+        {
+            name: "Tirupati Laddu",
+            description: "Famous sweet prasadam from Tirumala temple",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6TWxdzC_1UlixepdNecbsbPt_enS4AtpoQ&s"
+        },
+        {
+            name: "Pulihora",
+            description: "Traditional tamarind rice",
+            imageUrl: "https://aahaaramonline.com/wp-content/uploads/2019/04/Andhra_Nuvvula_Chintapandu_Pulihora_1.jpg"
+        }
+    ],
+    "East Godavari": [
+        {
+            name: "Pulasa Fish Curry",
+            description: "Special fish curry with unique taste",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4kFnPQCMhxF3VNXF7mfBS5Qdt-hxqLGw25Q&s"
+        },
+        {
+            name: "Coconut Rice",
+            description: "Traditional rice dish with coconut",
+            imageUrl: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/coconut-rice-recipe.jpg"
+        }
+    ],
+    "Guntur": [
+        {
+            name: "Guntur Chilli Chicken",
+            description: "Spicy chicken dish with famous Guntur chilies",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFsJVLXntUTtujLlCm9NgisHuvY7N1jPFJA&s"
+        },
+        {
+            name: "Gongura Pachadi",
+            description: "Traditional chutney made from sorrel leaves",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAmaUwHT7_5NZlVuEjT8EgGCdpZ4oGPirA5g&s"
+        }
+    ],
+    "Krishna": [
+        {
+            name: "Pesarattu",
+            description: "Green gram dosa with special chutney",
+            imageUrl: "https://www.kannammacooks.com/wp-content/uploads/pesarattu.jpg"
+        },
+        {
+            name: "Gutti Vankaya Curry",
+            description: "Stuffed eggplant curry",
+            imageUrl: "https://cakeworkorange.com/wp-content/uploads/2020/11/stuffed-brinjal-curry-1-500x375.jpg"
+        }
+    ],
+    "Kurnool": [
+        {
+            name: "Ragi Sankati",
+            description: "Traditional millet balls",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojHuU5094UZzd_rOrv17df1a-DQmp1jx36A&s"
+        },
+        {
+            name: "Natukodi Pulusu",
+            description: "Country chicken curry",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFsJVLXntUTtujLlCm9NgisHuvY7N1jPFJA&s"
+        }
+    ],
+    "Prakasam": [
+        {
+            name: "Ulava Charu",
+            description: "Horse gram soup",
+            imageUrl: "https://everydaynourishingfoods.com/wp-content/uploads/2019/12/Ulavacharu_recipe.jpg"
+        },
+        {
+            name: "Fish Pulusu",
+            description: "Traditional fish curry",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4kFnPQCMhxF3VNXF7mfBS5Qdt-hxqLGw25Q&s"
+        }
+    ],
+    "Nellore": [
+        {
+            name: "Nellore Fish Curry",
+            description: "Famous spicy fish curry",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4kFnPQCMhxF3VNXF7mfBS5Qdt-hxqLGw25Q&s"
+        },
+        {
+            name: "Chicken Biryani",
+            description: "Special Nellore style biryani",
+            imageUrl: "https://recipe30.com/wp-content/uploads/2023/03/chicken-Biryani.jpg"
+        }
+    ],
+    "Srikakulam": [
+        {
+            name: "Pulasa Fish Curry",
+            description: "Special curry with Pulasa fish",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCU-HQdVgQa8pwtL-9S6H4gWze_p0dzbRxbA&s"
+        },
+        {
+            name: "Pesarattu",
+            description: "Green gram dosa",
+            imageUrl: "https://www.kannammacooks.com/wp-content/uploads/pesarattu.jpg"
+        }
+    ],
+    "Visakhapatnam": [
+        {
+            name: "Bamboo Chicken",
+            description: "Tribal style chicken cooked in bamboo",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQse380Cc7Q3rGD80NHl6kN9hnZ2yLYE2yNLQ&s "
+        },
+        {
+            name: "Madugula Halwa",
+            description: "Traditional sweet dish",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvi97u2S_9hu-d3Cxy0q4Dk612i01UqdKyCQ&s"
+        }
+    ],
+    "Vizianagaram": [
+        {
+            name: "Vizianagaram Cakes",
+            description: "Famous local sweet",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyISfu6Vfp-Yx-_IbR2eqAqmRmUJQxw1q6YQ&s"
+        },
+        {
+            name: "Pulihora",
+            description: "Traditional tamarind rice",
+            imageUrl: "https://aahaaramonline.com/wp-content/uploads/2019/04/Andhra_Nuvvula_Chintapandu_Pulihora_1.jpg"
+        }
+    ],
+    "West Godavari": [
+        {
+            name: "Godavari Fish Curry",
+            description: "Special fish curry",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3j8fuLmfmK4kG2pFsSORsjja4GLlFhE9Isw&s"
+        },
+        {
+            name: "Pootharekulu",
+            description: "Traditional sweet made of rice starch",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNTrbuokpSOT2Pl8lGYyys5DzaW5y9FjcKgg&s"
+        }
+    ],
+    "YSR Kadapa": [
+        {
+            name: "Kadapa Karam",
+            description: "Special spicy powder",
+            imageUrl: "https://b.zmtcdn.com/data/pictures/4/20935314/f1e791678faf9e28ba18e19f48e4f0dc_o2_featured_v2.jpg?fit=around|960:500&crop=960:500;*,*"
+        },
+        {
+            name: "Ragi Sangati",
+            description: "Traditional millet balls",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojHuU5094UZzd_rOrv17df1a-DQmp1jx36A&s"
+        }
+    ]
+};
